@@ -1,1 +1,80 @@
-<div class='tableauPlaceholder' id='viz1771120537673' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;DailyGymAttendenceandWorkoutPatterns&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DailyGymAttendenceandWorkoutPatterns&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;DailyGymAttendenceandWorkoutPatterns&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1771120537673');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1277px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau Visualization | Farduus Ibraahim</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="lab02.html">Lab 2: AI Evaluation</a>
+            <a href="lab03.html" class="active">Lab 3: Visualization Critique</a>
+            <a href="lab04.html">Lab 4: Tableau Visualization</a>
+    <!-- s -->
+            <!-- Add more lab links as the semester progresses -->
+        </nav>
+        <h1>Tableau Visualization</h1>
+    </header>
+
+    <main>
+        <section>
+        <div class='tableauPlaceholder' id='viz1771120537673' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;DailyGymAttendenceandWorkoutPatterns&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DailyGymAttendenceandWorkoutPatterns&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;DailyGymAttendenceandWorkoutPatterns&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1771120537673');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1277px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                
+        <figcaption>
+                    <strong>Title:</strong>  Daily Gym Attendance and Workout Activity
+
+
+
+<br>
+                    <strong>Source:</strong> <a href="https://www.kaggle.com/datasets/zahranusratt/daily-gym-attendance-and-workout-activity-dataset" target="_blank">Dataset</a>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Critique</h2>
+            
+            <h3>Data Preparation</h3>
+            <p>For this lab, I chose a Daily Gym Attendance and Workout Activity dataset from Kaggle because fitness and consistency are topics I personally care about. Since I track my own workouts and think a lot about calorie burn, duration, and discipline, I felt like I could make real predictions before even building the visualization. I did not want to choose something random where I would just reverse-engineer insights after seeing the chart. I wanted something where I could genuinely test my expectations.
+            
+            Uploading the dataset into Tableau Public was mostly smooth, but I still had to double-check a few things before building the visuals. The most important field was Visit Date. If Tableau reads dates as text, the time-based analysis will not work correctly. I made sure it was recognized as a Date data type. I also checked that Workout Duration (Minutes) and Calories Burned were set as numeric measures instead of strings.
+            
+            Another thing I paid attention to was categorical consistency. For example, if workout types are spelled slightly differently, it can create misleading groupings in bar charts. Even though this dataset was relatively clean, I still made sure categories were consistent before analyzing frequency patterns. That step felt small, but I realized how easily messy categories can distort interpretation.
+ </p>
+
+            <h3>Design Choices</h3>
+            <p>I decided to build four main visuals, a line chart showing attendance over time, a bar chart showing workout type frequency, another bar chart showing intensity difference, and a scatter plot showing which workouts burn more and their efficiency. For the scatter plot, i experimented with a scatter plot comparing duration and calories burned. I wanted to see whether longer workouts actually correspond to significantly higher calorie burn, or if some workout types are more efficient than others.</p>
+        
+
+            <h3>Expected Patterns</h3>
+            <p>Before building anything, I expected to see fluctuations in attendance. From my own experience, consistency is rarely perfectly linear. I expected dips, possibly around weekends or certain periods, and more stable patterns during structured parts of the week. I also expected cardio-based workouts to appear frequently, since cardio is often associated with calorie burning and weight loss goals. I assumed that longer workouts would generally correlate with higher calorie burn. When I looked closely at the attendance line chart, I did see visible variation rather than a smooth upward pattern. That confirmed my understanding that gym consistency often comes in waves rather than perfect discipline. The scatter relationship between duration and calories mostly aligned with my expectation that longer sessions burn more calories, though not perfectly.</p>
+    
+
+            <h3>Surprises/Outliers</h3>
+            <p>One of the most interesting parts was noticing that some workout types did not burn as many calories as I would expect, even when the duration was longer. That made me question the difference between time spent and workout intensity. There were also attendance dips that stood out more than I anticipated. These dips disrupted otherwise steady patterns and made me curious about what external factors might explain them. It reminded me that behavior-based data almost always reflects human inconsistency. The most surprising takeaway for me was that frequency does not automatically mean effectiveness. Some workouts were common but did not show the highest average duration or calorie burn. That disconnect was more interesting than the patterns that matched my assumptions.</p>
+
+            <h3>Questions for Further Investigation</h3>
+            <p>This dataset raised several questions I would genuinely want to explore further:
+            <li>Are attendance drops tied to specific days of the week?</li>
+            <li>Do shorter workouts correspond to intentional recovery days?</li>
+            <li>Are high-frequency workouts chosen for convenience rather than intensity?</li>
+            <li>Does workout variety increase long-term consistency?</li>
+            <li>Are certain members more consistent than others, and what differentiates them?</li>
+
+            <h3>Tool Evaluation</h3>
+            <p>I liked how simple it was to build dashboards and allow charts to interact with each other. That interactivity is powerful for storytelling. However, Tableau feels less flexible when it comes to deeper data cleaning. If the dataset had been messier, I would have preferred preparing it in Python or Excel first. Overall, Tableau Public was helpful to me in identifying patterns and presenting interactive visualizations for my dataset.</p>
+
+
+</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Farduus Ibraahim</p>
+    </footer>
+</body>
+</html>
